@@ -1,8 +1,8 @@
 ﻿Shader "Unlit/Gem2"
 {
-	//A gem shader that uses a sphere and normal map skybox for an approximation of the second refraction, rather than raytracing to every surface of the gem.
+	//A gem shader that uses a sphere and normal cubemap for an approximation of the second refraction, rather than raytracing to every surface of the gem.
 	Properties{
-		_Cube("Face Normal Map", Cube) = "" {} // use the NormalDisplay on your gem's mesh and render it to a skybox, which you use here
+		_Cube("Face Normal Map", Cube) = "" {} // use the NormalDisplay on your gem's mesh and render it to a cubemap, which you use here
 		_Cube2("Refraction Source", Cube) = "" {} // the environment you will see through the gem
 		_Radius("Radius", float) = 3
 		_Refraction("Refraction", float) = 1.4
