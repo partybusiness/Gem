@@ -4,7 +4,7 @@
 	Properties{
 		_Cube("Face Normal Map", Cube) = "" {} // use the NormalDisplay on your gem's mesh and render it to a cubemap, which you use here
 		_Cube2("Refraction Source", Cube) = "" {} // the environment you will see through the gem
-		_Radius("Radius", float) = 3
+		_Radius("Radius", float) = 1.3 //make this radius slightly larger than your gem's mesh
 		_Refraction("Refraction", float) = 1.4
 	}
 	SubShader{
